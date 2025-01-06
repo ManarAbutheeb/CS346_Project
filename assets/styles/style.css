@@ -53,9 +53,7 @@ a:hover {
     border-color: #9b5d00;
 }
 
-.btn-outline-primary:hover,
-.btn-outline-primary:active,
-.btn-outline-primary:focus {
+.btn-outline-primary:hover {
     background-color: #ffffff;
     color: black;
     border-color: black;
@@ -68,12 +66,20 @@ a:hover {
     margin-right: 10px;
 }
 
-.btn-primary:hover
-,.btn-primary:active,
-.btn-primary:focus {
+.btn-primary:hover {
     background-color: black;
     border-color: black;
 
+}
+footer {
+    position: fixed; 
+    left: 0;
+    bottom: 0;
+    width: 100%; 
+    text-align: center; 
+    padding: 10px 0;
+    background-color: #f1f1f1; 
+    color: #333; 
 }
 
 
