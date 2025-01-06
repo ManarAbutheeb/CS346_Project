@@ -1,0 +1,64 @@
+
+.page-layout {
+    display: flex; 
+    justify-content: space-between; 
+    padding: 20px;
+}
+.shopping-bag-container {
+    flex: 1; 
+    padding: 20px;
+    margin: 10px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    min-height: 300px; 
+    overflow: visible;
+}
+
+.sidebar-container {
+    width: 30%; 
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+a {
+    text-decoration: none;
+    color: black;
+ font-size: larger;
+}
+a:hover {
+    color: #ff9900;
+}
+button.shop-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #8a5300;
+    border: none;
+    color: white;
+}
+button.shop-button:hover {
+    background-color: #ffffff; 
+    border-color: #8a5300;
+    border-style: solid;
+    border-width: 1px;
+}
+.sidebar-container ul {
+    list-style: none; 
+    padding: 0;
+}
+
+.sidebar-container li {
+    padding: 8px 0; 
+    border-bottom: 1px solid #ccc; 
+}
+
+.sidebar-container li:last-child {
+    border-bottom: none;
+}
+
+.sidebar-container h2 {
+    border-bottom: 0.5px solid #ccc; 
+    padding-bottom: 40px; 
+    margin-bottom: 20px;
+}
+
+
