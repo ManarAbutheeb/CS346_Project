@@ -47,16 +47,19 @@ a:hover {
     padding-bottom: 40px; 
     margin-bottom: 20px;
 }
-/* Custom button styles */
+
 .btn-outline-primary {
     color: #9b5d00;
     border-color: #9b5d00;
 }
 
-.btn-outline-primary:hover {
+.btn-outline-primary:hover,
+.btn-outline-primary:active,
+.btn-outline-primary:focus {
     background-color: #ffffff;
     color: black;
     border-color: black;
+
 }
 
 .btn-primary {
@@ -65,9 +68,12 @@ a:hover {
     margin-right: 10px;
 }
 
-.btn-primary:hover {
+.btn-primary:hover
+,.btn-primary:active,
+.btn-primary:focus {
     background-color: black;
     border-color: black;
+
 }
 
 
