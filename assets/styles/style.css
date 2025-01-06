@@ -21,26 +21,13 @@
 }
 a {
     text-decoration: none;
-    color: black;
+color: black;
  font-size: larger;
 }
 a:hover {
-    color: #ff9900;
+    color: #9b5d00;
 }
-button.shop-button {
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    background-color: #8a5300;
-    border: none;
-    color: white;
-}
-button.shop-button:hover {
-    background-color: #ffffff; 
-    border-color: #8a5300;
-    border-style: solid;
-    border-width: 1px;
-}
+
 .sidebar-container ul {
     list-style: none; 
     padding: 0;
@@ -59,6 +46,27 @@ button.shop-button:hover {
     border-bottom: 0.5px solid #ccc; 
     padding-bottom: 40px; 
     margin-bottom: 20px;
+}
+/* Custom button styles */
+.btn-outline-primary {
+    color: #9b5d00;
+    border-color: #9b5d00;
+}
+
+.btn-outline-primary:hover {
+    background-color: #ffffff;
+    color: black;
+    border-color: black;
+}
+
+.btn-primary {
+    background-color: #9b5d00;
+    border-color: #9b5d00;
+}
+
+.btn-primary:hover {
+    background-color: black;
+    border-color: black;
 }
 
 
