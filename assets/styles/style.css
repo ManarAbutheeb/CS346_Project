@@ -83,3 +83,33 @@ footer {
 }
 
 
+/* Hero Section Styles */
+.hero {
+    background-color: #9b5d00;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.hero img {
+    max-width: 200px;
+    margin-bottom: 30px;
+}
+
+.hero-text h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.hero-text h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
