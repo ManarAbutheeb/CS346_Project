@@ -67,8 +67,9 @@ a:hover {
 }
 
 .btn-primary:hover {
-    background-color: black;
+    background-color: rgb(255, 255, 255);
     border-color: black;
+    color: #000000;
 
 }
 footer {
@@ -78,28 +79,28 @@ position: fixed;
     width: 100%; 
     text-align: center; 
     padding: 3px 0;
-    background-color: #d8d8d8; 
-    color: #333; 
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #000000; 
     height: 20px;
 }
 
 *{
-    margin: 0;
-    padding: 0;
+
     box-sizing: border-box;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 body{
-   
     background-color: #ffffff;
     color: #333;
     line-height: 1.6;
-  
+    padding-top: 130px;
 
 }
 
 .hero{
+    margin: 0;
+    padding: 0;
     position: relative;
     height: 100vh;
     /*background-color: #333;*/
@@ -111,7 +112,7 @@ body{
 
 .hero-image{
 position: absolute;
-top: 0;
+top: 0px;
 left: 0;
 right: 0;
 width: 100%;
@@ -137,3 +138,21 @@ z-index: -1;
     margin-bottom: 40px;
 }
 
+#navbar {
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10; /* Ensures the navbar is above other content */
+  }
+ 
+  .alert {
+    margin: 0;
+    padding: 0.75rem 1rem; /* Default padding for Bootstrap alerts */
+    position:absolute;
+    top: 75px; /* The exact height of the navbar */
+    width: 100%;
+    z-index: 9; /* Ensures alert is below navbar but above content */
+  }
