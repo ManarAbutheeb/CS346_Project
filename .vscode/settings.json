@@ -11,5 +11,6 @@
             "environmentVariable": "JAVA_HOME",
             "value": "c:\\Program Files\\Java\\jdk-18.0.2"
         }
-    ]
+    ],
+    "liveServer.settings.port": 5501
 }
