@@ -141,3 +141,92 @@ transition: background-color 0.3s ease;
 .btn:hover{
     background-color: #ffb766;
 }
+
+
+.about-us {
+    background-color: #ffb766;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.about-us h1{
+    font-size: 36px;
+    color: #000000;
+    margin-bottom: 20px;
+
+}
+
+.about-us p {
+    font-size: 18px;
+    color: #333;
+    max-width: 800px;
+    margin: 0 auto 40px;
+}
+
+.team{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+
+}
+
+.team-member{
+    text-align: center;
+    max-width: 200px;
+}
+
+.team-member h3 {
+    font-size: 20px;
+    color: #333;
+}
+
+
+.team-member p {
+    font-size: 16px;
+    color: #777;
+}
+
+.contact-us {
+    background-color: #9b5d00;
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.contact-us h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.contact-form{
+    margin-top: 40px;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.contact-form input, .contact-form textarea{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button{
+    background-color: #9b5d00;
+    color: #fff;
+    padding: 15px 30px;
+    border: none ;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover{
+    background-color: antiquewhite;
+    color: #000000;
+}
