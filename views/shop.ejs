@@ -4,89 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jewelry Collection</title>
-
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="/styles/style.css">
 </head>
 <body>
 
-    <!-- Include the navbar -->
-    <%- include('components/navbar') %>  <!-- Assuming you have a 'navbar.ejs' partial -->
+    <%- include('components/navbar') %>
 
     <div class="header">
         <h1>Elegant Jewelry Collection</h1>
     </div>
 
     <div class="gallery">
-        <div class="gallery-item">
-            <img src="/assets/img/OTSW01_GE64831.webp" alt="Jewelry Item 1">
-            <div class="details">
-                <h2>Oval Diamond Earrings</h2>
-                <p>Price: $18,500</p>
-            </div>
-        </div>
+        <% if (products.length === 0) { %>
+            <p>No products available.</p>
+        <% } else { %>
+            <% products.forEach(product => { %>
+                <div class="gallery-item">
+<img src="<%= product.imageUrl %>" alt="<%= product.name %>">
 
-        <div class="gallery-item">
-            <img src="/assets/img/RGB019_RGB019_GB7232_Hero_1.webp" alt="Jewelry Item 2">
-            <div class="details">
-                <h2>Slim Emerald Cut Diamond Bracelet</h2>
-                <p>Price: $19,800</p>
-            </div>
-        </div>
-
-        <div class="gallery-item">
-            <img src="/assets/img/RGB583_RGB583_Hero_1.jpg" alt="Jewelry Item 3">
-            <div class="details">
-                <h2>Emerald Cut And Round Diamond Bracelet</h2>
-                <p>Price: $23,200</p>
-            </div>
-        </div>
-
-        <div class="gallery-item">
-            <img src="/assets/img/RGET099_RGET099_GR27602_Hero_1.jpg" alt="Jewelry Item 4">
-            <div class="details">
-                <h2>Emerald Cut Diamond Band</h2>
-                <p>Price: $24,000</p>
-            </div>
-        </div>
-
-        <div class="gallery-item">
-            <img src="/assets/img/RGN480_RGN480_hero_1.webp" alt="Jewelry Item 5">
-            <div class="details">
-                <h2>Emerald and Diamond Cross-over Necklace</h2>
-                <p>Price: $20,200</p>
-            </div>
-        </div>
-
-        <div class="gallery-item">
-            <img src="/assets/img/RGR734_GR158177_Hero.jpg" alt="Jewelry Item 6">
-            <div class="details">
-                <h2>Oval Yellow and White Diamond Ring</h2>
-                <p>Price: $22,800</p>
-            </div>
-        </div>
-
-        <div class="gallery-item">
-            <img src="/assets/img/YRATSW01_GE74777_Hero.jpg" alt="Jewelry Item 7">
-            <div class="details">
-                <h2>Yellow Diamond Solitaire Earrings</h2>
-                <p>Price: $30,500</p>
-            </div>
-        </div>
-
-        <div class="gallery-item">
-            <img src="/assets/img/images_hi_res_RGN591ALL_RGN591_GN8823_Hero_1.webp" alt="Jewelry Item 8">
-            <div class="details">
-                <h2>Diamond Cross-over Necklace</h2>
-                <p>Price: $50,000</p>
-            </div>
-        </div>
+                    <div class="details">
+                        <h2><%= product.name %></h2>
+                        <p>Price: <%= product.price %></p>
+                        <p>Available at: <%= product.branch %> branch</p>
+                        <p>Quantity: <%= product.quantity %></p>
+                     
+                    </div>
+                </div>
+            <% }) %>
+        <% } %>
     </div>
 
     <footer>
         <p>© 2025 Lam'a. All rights reserved.</p>
     </footer>
 
+    <script>
+        fetch('/components/navbar.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('navbar').innerHTML = data);
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 </body>

@@ -7,11 +7,6 @@ const productSchema = new mongoose.Schema({
     required: true, 
     trim: true,    
   },
-  description: {
-    type: String,
-    required: true,
-    trim: true,    
-  },
   price: {
     type: Number,
     required: true, 
@@ -22,6 +17,10 @@ const productSchema = new mongoose.Schema({
     required: true,  
     min: 0,         
     default: 0,      
+  },
+  branch:{
+    type: String,
+    required: true, 
   },
   imageUrl: {
     type: String,
