@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy, Shipping & Contact</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/style.css">
+
+</head>
+<body>
+
+    <div id="navbar">
+        <% include ../components/navbar %> <!-- Dynamically include the navbar using EJS -->
+    </div>
+
+    <div class="container mt-5">
+
+        <section id="privacy-policy">
+            <h2>Privacy Policy</h2>
+            <hr>
+            <p>At Lam'a, we value your privacy and are committed to protecting your personal information. Here is an outline of how we collect, use, and store your data...</p>
+        </section>
+        <br><br>
+
+        <section id="shipping-policy">
+            <h2>Shipping Policy</h2>
+            <hr>
+            <p>We offer fast and reliable shipping for all our products. We deliver to most areas in Saudi Arabia. Shipping charges is 35 for all locations and we only accept cash payments.</p>
+        </section>
+
+        <br><br>
+
+        <section id="contact-us">
+            <h2>Contact Us</h2>
+            <hr>
+            <p>If you have any questions or need assistance, feel free to contact us:</p>
+
+            <ul>
+                <li><strong>Email:</strong> support@Lam'a.com</li>
+                <li><strong>Phone:</strong> +966 123 456 789</li>
+                <li><strong>Address:</strong> Olaya, Riyadh, Saudi Arabia</li>
+            </ul>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>© 2025 Lam'a. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Fetch and dynamically insert the navbar content
+        fetch('/components/navbar.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('navbar').innerHTML = data);
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,3 +1,7 @@
+html {
+    text-size-adjust: 100%; /* Standard version */
+}
+
 .page-layout {
     display: flex;
     justify-content: space-between;
@@ -94,16 +98,13 @@ footer {
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-
+    padding-bottom: 50px;
     color: #333;
     line-height: 1.6;
 }
 .hero {
-    background-image: url('../assets/img/abstract-luxury-golden_294865-1831.jpg');
-    background-size: cover;  /* Ensures the image covers the entire section */
-    background-position: center; /* Centers the image */
-    background-repeat: no-repeat; /* Prevents repeating */
-    height: 100vh; /* Makes it take the full height of the viewport */
+
+    min-height: 100vh; 
     width: 100%;
     display: flex;
     justify-content: center; /* Centers text horizontally */
@@ -224,4 +225,15 @@ body {
 .contact-form button:hover {
     background-color: antiquewhite;
     color: #000000;
+}
+
+@media (max-width: 768px) {
+    .page-layout {
+        flex-direction: column; /* Stack elements vertically on smaller screens */
+    }
+
+    .sidebar-container {
+        width: 100%;
+        margin-top: 20px;
+    }
 }
