@@ -10,39 +10,39 @@
 </head>
 <body>
 
-    <div id="navbar">
-        <% include ../components/navbar %> <!-- Dynamically include the navbar using EJS -->
-    </div>
+    <%- include('components/navbar') %>
 
     <div class="container mt-5">
-
-        <section id="privacy-policy">
-            <h2>Privacy Policy</h2>
-            <hr>
-            <p>At Lam'a, we value your privacy and are committed to protecting your personal information. Here is an outline of how we collect, use, and store your data...</p>
-        </section>
-        <br><br>
-
-        <section id="shipping-policy">
-            <h2>Shipping Policy</h2>
-            <hr>
-            <p>We offer fast and reliable shipping for all our products. We deliver to most areas in Saudi Arabia. Shipping charges is 35 for all locations and we only accept cash payments.</p>
-        </section>
-
-        <br><br>
-
-        <section id="contact-us">
-            <h2>Contact Us</h2>
-            <hr>
-            <p>If you have any questions or need assistance, feel free to contact us:</p>
-
-            <ul>
-                <li><strong>Email:</strong> support@Lam'a.com</li>
-                <li><strong>Phone:</strong> +966 123 456 789</li>
-                <li><strong>Address:</strong> Olaya, Riyadh, Saudi Arabia</li>
-            </ul>
-        </section>
-
+        <div class="sidebar-container">
+            <section id="privacy-policy">
+                <h2>Privacy Policy</h2>
+             
+                <p>At Lam'a, we value your privacy and are committed to protecting your personal information. Here is an outline of how we collect, use, and store your data...</p>
+            </section>
+            <br><br>
+    
+            <section id="shipping-policy">
+                <h2>Sales Information</h2>
+               
+                <p>We offer high-quality jewelry with exclusive designs. Our pieces are crafted with precision and elegance, available for purchase across Saudi Arabia. Prices are competitive.</p>
+            </section>
+    
+            <br><br>
+    
+            <section id="contact-us">
+                <h2>Contact Us</h2>
+              
+                <p>If you have any questions or need assistance, feel free to contact us:</p>
+    
+                <ul>
+                    <li><strong>Email:</strong> support@Lam'a.com</li>
+                    <li><strong>Phone:</strong> +966 123 456 789</li>
+                    <li><strong>Address:</strong> Olaya, Riyadh, Saudi Arabia</li>
+                </ul>
+            </section>
+        </div>
+       
+       
     </div>
 
     <footer>

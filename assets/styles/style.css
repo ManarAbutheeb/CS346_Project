@@ -19,7 +19,7 @@ html {
 }
 
 .sidebar-container {
-    width: 30%;
+    width: 100%;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -107,10 +107,10 @@ body {
     min-height: 100vh; 
     width: 100%;
     display: flex;
-    justify-content: center; /* Centers text horizontally */
-    align-items: center; /* Centers text vertically */
+    justify-content: center; 
+    align-items: center; 
     text-align: center;
-    color: white; /* Adjust text color for readability */
+    color: white; 
 }
 .hero-image {
     position: absolute;
@@ -313,9 +313,88 @@ body {
     background-image: url('/img/image.png');
  
 }
-
 .header h1 {
     font-size: 3rem;
     letter-spacing: 2px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.gbody {
+
+    color: #333;
+    background-image: url('/img/whitebackground.jpg'); /* Background image */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+.herog {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: rgba(214, 214, 214, 0.6);
+    margin: 20px auto;
+    max-width: 1200px;
+    border-radius: 10px;
+}
+
+.herog img {
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.herog h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.herog p {
+    font-size: 1.1rem;
+    color: #666;
+}
+
+.galleryy {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 40px 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.galleryy-item {
+overflow: hidden;
+border-radius: 10px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+height: 300px; /* ارتفاع موحد لكل الصور */
+}
+
+.galleryy-item img {
+width: 100%;
+height: 100%;
+object-fit: cover; /* لضمان التغطية بدون تشويه */
+display: block;
+transition: transform 0.3s;
+}
+.modal {
+display: none;
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(0, 0, 0, 0.8);
+justify-content: center;
+align-items: center;
+z-index: 1000;
+}
+
+.modal img {
+max-width: 90%;
+max-height: 80%;
+border-radius: 15px;
+}
+
+.modal.active {
+display: flex;
 }
