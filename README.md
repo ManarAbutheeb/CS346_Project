@@ -1,6 +1,5 @@
 # WebProject
-# WebProject 
- 
+
 Our website focuses on displaying elegant and modern jewelry. We offer our customers a variety of luxury jewelry characterized by beauty and quality, and to see where the piece they want are available at which branch. The site's goal is to provide users with giving them multiple options to choose products that match their tastes. 
  
 How to use our website: 
